@@ -1,0 +1,120 @@
+/* 
+    Created on : 16 févr. 2014, 19:21:42
+    Author     : Francois Greze <francois.greze@gmail.com>
+*/
+
+/* reset */
+a::focus {
+    -moz-outline-style: none;
+}
+:-moz-any-link:focus {
+    outline: none;
+}
+.darkorange{
+    color: darkorange;
+}
+.active{
+    color: darkorange;
+    border-bottom: 2px darkorange solid!important;
+}
+
+/* init*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover{
+    color: darkorange;
+}
+/* scroll seciton skin */
+body section.scroll-section:nth-child(even) {
+    background-color:#D1D1D1;
+    color:#ff8c00; 
+}
+body section.scroll-section:nth-child(odd) {
+    background-color: #33ccff;
+    color: #FF8C00; 
+}
+section.scroll-section {
+    min-height: 900px;
+    height: 1200px;/* @scrollIt : a section should have a height for make it works !!*/
+    width: 100%; 
+}
+section > div.container > div.row > div.boiler-symbol{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 200px;
+    text-align: center;
+}
+section > div.container > div.row > div.boiler-symbol > p{
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    position: relative; 
+    top: 20px;
+    color: white;
+}
+/* navigation skin */
+div.navbar.navbar-default.navbar-fixed-top {
+    background-color: #141414;
+    border: none!important;
+}
+ul.nav.navbar-nav li a{
+    border: none;
+    width: 80px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+ul.nav.navbar-nav li a:hover{
+    color: darkorange;
+}
+nav.navbar-collapse{
+    float: none;
+    text-transform: uppercase;
+    width: 378px;
+    height: 80px;
+    margin: 0 auto!important;
+    background-color: #141414;
+}
+nav.navbar-collapse ul.nav li a i.fa {
+    position: relative;
+    top:-12px;
+}
+
+div.navbar div.container{
+    background-color: #141414;
+}
+
+.navbar-default .navbar-collapse{
+    border: 0!important;
+}
+.navbar-default .navbar-toggle {
+    background-color: #141414;
+    border-color: #141414;
+}
+.navbar-default .navbar-toggle:hover{
+    background-color: #141414;
+    border-color: #141414;
+}
+.navbar-brand{
+    padding: 10px 10px;
+}
+.navbar-brand i.fa, button.navbar-toggle i.fa {
+    color: darkorange;
+}
+button.navbar-toggle {
+    background-color: black;
+}
+
+
+@media(max-width: 480px){
+
+}
+
+@media(max-width: 768px){
+
+}
