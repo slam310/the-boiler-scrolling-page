@@ -14,7 +14,7 @@
         <link href='http://fonts.googleapis.com/css?family=Stalemate|Roboto:400,900' rel='stylesheet' type='text/css'>
         <!-- Put all your style in a separate CSS file -->
         <style>
-            
+
         </style>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,74 +24,91 @@
         <![endif]-->
     </head>
     <body>
-        <!-- // NAVIGATION SECTION //-->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-1x fa-align-justify"></i>
-                    </button>
-                    <a class="navbar-brand visible-xs" href="#home" data-scroll-goto="0">
-                        <i class="fa fa-2x fa-html5"> </i>
-                    </a>
+        <!--// WRAPPER // -->
+        <div id="wrap"> 
+            <header id="slider-header" data-scroll-index="0">
+                <a href="#home" data-scroll-goto="1">
+                    <i class="fa fa-5x fa-arrow-down"> </i>
+                </a>
+            </header>
+            <!-- // NAVIGATION SECTION //-->
+            <div class="navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-1x fa-align-justify"></i>
+                        </button>
+                        <a class="navbar-brand visible-xs" href="#home" data-scroll-goto="0">
+                            <i class="fa fa-2x fa-html5 dark-grey"> </i>
+                        </a>
+                    </div>
+                    <nav class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="#home" data-scroll-nav="1" class="active">Home</a></li>
+                            <li><a href="#about" data-scroll-nav="2">About</a></li>
+                            <li class="hidden-xs">
+                                <a href="#top" data-scroll-goto="0">
+                                    <i class="fa fa-3x fa-html5 dark-grey"> </i>
+                                </a>
+
+                            </li>
+                            <li><a href="#contact" data-scroll-nav="3">Contact</a></li>
+                            <li><a href="#service" data-scroll-nav="4">Service</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li ><a href="#home" data-scroll-nav="0" class="active">Home</a></li>
-                        <li><a href="#about" data-scroll-nav="1">About</a></li>
-                        <li class="hidden-xs">
-                            <i class="fa fa-4x fa-html5 darkorange"> </i>
-                        </li>
-                        <li><a href="#contact" data-scroll-nav="2">Contact</a></li>
-                        <li><a href="#service" data-scroll-nav="3">Service</a></li>
-                    </ul>
-                </nav>
+            </div>
+            <!-- // END NAVIGATION SECTION //-->
+
+            <!-- // SCROLLING PAGE  SECTION //-->
+            <section class="scroll-section" data-scroll-index="1">
+                <div class="container">
+                    <div class="row">
+                        <div class="boiler-symbol">
+                            <i class="boilerplate fa fa-5x fa-rocket"></i>
+                            <p>home !!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="scroll-section" data-scroll-index="2">
+                <div class="container">
+                    <div class="row">
+                        <div class="boiler-symbol">
+                            <i class="boilerplate fa fa-5x fa-android"></i>
+                            <p>about</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="scroll-section" data-scroll-index="3">
+                <div class="container">
+                    <div class="row">
+                        <div class="boiler-symbol">
+                            <i class="boilerplate fa fa-5x fa-dribbble"></i>
+                            <p>about</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="scroll-section" data-scroll-index="4">
+                <div class="container">
+                    <div class="row">
+                        <div class="boiler-symbol">
+                            <i class="boilerplate fa fa-5x  fa-github-alt"></i>
+                            <p>service</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--// WRAPPER // -->
+        <div id="footer">
+            <div class="container">
+                <p>copyright - 2014 <a href="#">Your company name</a> </p>
             </div>
         </div>
-        <!-- // END NAVIGATION SECTION //-->
-        
-        <!-- // SCROLLING PAGE  SECTION //-->
-        <section class="scroll-section" data-scroll-index="0">
-            <div class="container">
-                <div class="row">
-                    <div class="boiler-symbol">
-                        <i class="boilerplate fa fa-5x fa-rocket"></i>
-                        <p>home !!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="scroll-section" data-scroll-index="1">
-            <div class="container">
-                <div class="row">
-                    <div class="boiler-symbol">
-                        <i class="boilerplate fa fa-5x fa-android"></i>
-                        <p>about</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="scroll-section" data-scroll-index="2">
-            <div class="container">
-                <div class="row">
-                    <div class="boiler-symbol">
-                        <i class="boilerplate fa fa-5x fa-dribbble"></i>
-                        <p>about</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="scroll-section" data-scroll-index="3">
-            <div class="container">
-                <div class="row">
-                    <div class="boiler-symbol">
-                        <i class="boilerplate fa fa-5x  fa-github-alt"></i>
-                        <p>service</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- // SCROLLING PAGE SECTION //-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

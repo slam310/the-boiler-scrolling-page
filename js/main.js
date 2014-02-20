@@ -15,3 +15,11 @@ $(window).load(function() {
     $(this).scrollTop(0);
     $.scrollIt();
 });
+ $(window).bind('scroll', function() {
+         if ($(window).scrollTop() > 1200) {
+             $('.navbar').css('position', 'fixed');
+         }
+         else {
+             $('.navbar').css('position', 'relative');
+         }
+    });

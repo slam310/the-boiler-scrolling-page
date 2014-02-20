@@ -1,5 +1,5 @@
 /* 
-    Created on : 16 fÃ©vr. 2014, 19:21:42
+    Created on : 16 févr. 2014, 19:21:42
     Author     : Francois Greze <francois.greze@gmail.com>
 */
 
@@ -13,19 +13,66 @@ a::focus {
 .darkorange{
     color: darkorange;
 }
+.dark-grey{
+    color: #333333;
+}
 .active{
     color: darkorange;
-    border-bottom: 2px darkorange solid!important;
+    background-color: transparent;
+    border-bottom: 2px #333333 solid!important;
 }
 
 /* init*/
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    overflow:hidden;
+    //Negative indent footer by its height 
+    margin: 0 auto -60px;
+    //Pad bottom by footer height 
+    padding: 0 0 60px;
+}
+#slider-header{
+    width: 100%;
+    height: 1200px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+    position: relative;
+    margin-top: -60px; /* negative value of footer height */
+    height: 60px;
+    
+    background-color: #141414;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
 a:hover{
     color: darkorange;
 }
-/* scroll seciton skin */
+
+/* header top slider seciton */
+div#wrap header#slider-header{
+    text-align: center;
+}
+div#wrap header#slider-header a{
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    margin-left:-50px;
+    
+}
+/* scroll section skin */
 body section.scroll-section:nth-child(even) {
     background-color:#D1D1D1;
     color:#ff8c00; 
@@ -56,17 +103,36 @@ section > div.container > div.row > div.boiler-symbol > p{
     color: white;
 }
 /* navigation skin */
-div.navbar.navbar-default.navbar-fixed-top {
-    background-color: #141414;
+div.navbar {
+    background-color:#141414;
     border: none!important;
+    top:0;
+    left: 0;
+    right:0;
+    margin-bottom: 0px!important;
+    border-width: 0 0 0px;
+    position: relative;
+    z-index: 1030;
+    height: 50px;
+}
+ul.nav.navbar-nav {
+    margin: 7.5px 0px;
+    padding-top:5px;
+    height: 35px;
+    
+}
+ul.nav.navbar-nav li {
+    width: 80px;
+    text-align: center;
 }
 ul.nav.navbar-nav li a{
-    border: none;
-    width: 80px;
     display: block;
-    color: white;
+    width: 80px;
+    padding: 0px;
+    background-color: transparent;
+    color: #f8f8f8;
+    border: none;
     font-weight: bold;
-    text-align: center;
 
 }
 ul.nav.navbar-nav li a:hover{
@@ -75,28 +141,28 @@ ul.nav.navbar-nav li a:hover{
 nav.navbar-collapse{
     float: none;
     text-transform: uppercase;
-    width: 378px;
-    height: 80px;
+    width: 400px;
+    height: 60px;
     margin: 0 auto!important;
     background-color: #141414;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 nav.navbar-collapse ul.nav li a i.fa {
     position: relative;
-    top:-12px;
+    top:-7px;
 }
 
 div.navbar div.container{
     background-color: #141414;
 }
 
-.navbar-default .navbar-collapse{
+.navbar .navbar-collapse{
     border: 0!important;
-}
-.navbar-default .navbar-toggle {
     background-color: #141414;
     border-color: #141414;
 }
-.navbar-default .navbar-toggle:hover{
+.navbar .navbar-toggle:hover{
     background-color: #141414;
     border-color: #141414;
 }
@@ -110,11 +176,32 @@ button.navbar-toggle {
     background-color: black;
 }
 
-
 @media(max-width: 480px){
-
+    ul.nav.navbar-nav li a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+    }
 }
 
 @media(max-width: 768px){
-
+    nav.navbar-collapse {
+     width: 100%;
+    }
+    ul.nav.navbar-nav {
+        height: auto;
+        margin: 7.5px 0;
+        padding-top: 5px;
+    }
+    ul.nav.navbar-nav li {
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    ul.nav.navbar-nav li a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+    }
 }
