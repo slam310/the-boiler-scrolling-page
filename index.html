@@ -8,14 +8,11 @@
         <!-- Bootstrap -->
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/flexslider.css" rel="stylesheet" >
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link href="css/style.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Stalemate|Roboto:400,900' rel='stylesheet' type='text/css'>
-        <!-- Put all your style in a separate CSS file -->
-        <style>
-
-        </style>
+        <!-- REVOLUTION BANNER CSS SETTINGS -->
+        <link rel="stylesheet" type="text/css" href="js/vendor/rs-plugin/css/settings.css" media="screen" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -27,8 +24,50 @@
         <!--// WRAPPER // -->
         <div id="wrap"> 
             <header id="slider-header" data-scroll-index="0">
+                <div class="tp-banner-container">
+                    <div class="tp-banner" >
+                        <ul>	<!-- SLIDE  -->
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/000000&text=Slide+1"  style='background-color:#141414' alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                                <!-- LAYERS -->
+                            </li>
+         
+                            <!-- SLIDE  -->
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/FF9400/000000&text=Slide+2" style='background-color:#141414' alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                                <!-- LAYERS -->
+                            </li>
+                              <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/ffffff&text=Slide+3"  alt="" style='background-color:#141414'  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/ff0000&text=Slide+4" style='background-color:#141414' alt=""  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/333333&text=Slide+5"  alt="" style='background-color:#141414'  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                              <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/ff0084/000000&text=Slide+6"  alt="" style='background-color:#141414'  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                             <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                                <!-- MAIN IMAGE -->
+                                <img src="http://placehold.it/1000x553/33CCFF/000000&text=Slide+7"  alt="" style='background-color:#141414'  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer"></div>
+                    </div>
+                </div>
+
                 <a href="#home" data-scroll-goto="1">
-                    <i class="fa fa-5x fa-arrow-down"> </i>
+                    <i class="fa fa-5x fa-caret-square-o-down "> </i>
                 </a>
             </header>
             <!-- // NAVIGATION SECTION //-->
@@ -112,10 +151,12 @@
         <!-- // SCROLLING PAGE SECTION //-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <!-- jQuery ScrollIt  -->
         <script src="js/scrollIt.min.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
+        <!-- jQuery REVOLUTION Slider  -->
+        <script type="text/javascript" src="js/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="js/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
