@@ -110,6 +110,7 @@ section > div.container > div.row > div.boiler-symbol > p{
 div.navbar {
     background-color:#141414;
     border: none!important;
+    border-radius: 0px;
     top:0;
     left: 0;
     right:0;

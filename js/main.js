@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
                 onHoverStop:"off",
                 fullWidth: "on",
                 fullScreen: "on",
-                navigationStyle: "none",
+                navigationStyle: "none"
             });
 
 });	//ready
